@@ -1,0 +1,70 @@
+<!-- insta can we get much higher -->
+<html>
+  <head>
+    <title>Can we get much higher?</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <video autoplay loop poster="tink.png" id="bgvid">
+        <source src="rockclimber.webm" type="video/webm">
+    </video>
+
+    <div id="button">
+      <a id="buttanchor" onmousedown="javascript:popdown_button()" onmouseup="javascript:popup_button()">
+        <!-- these are the hottest assets -->
+        <img src="buttonup.png" border="0" id="imgbtn">
+      </a>
+    </div>
+    <div id="audio">
+      <audio id="higher1" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher2" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher3" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher4" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher5" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher6" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher7" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher8" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher9" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher10" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher11" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher12" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher13" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher14" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher15" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+      <audio id="higher16" preload="auto" src="higher.mp3" type="audio/mpeg"> </audio>
+    </div>
+  </body>
+</html>
+
+
+<script>
+if (document.images) {
+  img1 = new Image();
+  img1.src = "buttondown.png";
+  img2 = new Image();
+  img2.src = "buttonup.png";
+}
+
+  var j=1;
+  var track;
+function popup_button()
+{
+  {
+    document.getElementById("imgbtn").src="buttonup.png"
+  }
+}
+
+function popdown_button()
+{
+  {
+    document.getElementById("imgbtn").src="buttondown.png"
+    if(j >= 16)
+    {
+      j = 1;
+    }
+    var audio = document.getElementById("higher"+j);
+    j++;
+    audio.play();
+  }
+}
+</script>
