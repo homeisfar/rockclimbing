@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
-    <video autoplay loop poster="tink.png" id="bgvid">
+    <video autoplay loop id="bgvid">
         <source src="rockclimber.webm" type="video/webm">
     </video>
 
     <div id="button">
       <a id="buttanchor" onmousedown="javascript:popdown_button()" onmouseup="javascript:popup_button()">
         <!-- these are the hottest assets -->
-        <img src="buttonup.png" border="0" id="imgbtn">
+        <img src="buttonup.gif" border="0" id="imgbtn">
       </a>
     </div>
     <div id="audio">
@@ -40,9 +40,9 @@
 <script>
 if (document.images) {
   img1 = new Image();
-  img1.src = "buttondown.png";
+  img1.src = "buttondown.gif";
   img2 = new Image();
-  img2.src = "buttonup.png";
+  img2.src = "buttonup.gif";
 }
 
   var j=1;
@@ -50,14 +50,14 @@ if (document.images) {
 function popup_button()
 {
   {
-    document.getElementById("imgbtn").src="buttonup.png"
+    document.getElementById("imgbtn").src="buttonup.gif"
   }
 }
 
 function popdown_button()
 {
   {
-    document.getElementById("imgbtn").src="buttondown.png"
+    document.getElementById("imgbtn").src="buttondown.gif"
     if(j >= 16)
     {
       j = 1;
