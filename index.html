@@ -49,22 +49,18 @@ if (document.images) {
   var track;
 function popup_button()
 {
-  {
-    document.getElementById("imgbtn").src="buttonup.gif"
-  }
+  document.getElementById("imgbtn").src="buttonup.gif"
 }
 
 function popdown_button()
 {
+  document.getElementById("imgbtn").src="buttondown.gif"
+  if(j >= 16)
   {
-    document.getElementById("imgbtn").src="buttondown.gif"
-    if(j >= 16)
-    {
-      j = 1;
-    }
-    var audio = document.getElementById("higher"+j);
-    j++;
-    audio.play();
+    j = 1;
   }
+  var audio = document.getElementById("higher"+j);
+  j++;
+  audio.play();
 }
 </script>
